@@ -1,20 +1,16 @@
 #pragma once
-#include <math.h>
-
-
-//Identity
-
 
 //Binary step
-
+double binary(double);
 
 //Sigmoid
-
+double sigmoid(double);
+double sigmoid_Derivative(double);
 
 //TanH
+double tanh(double);
+double tanh_Derivative(double);
 
-
-//ArcTan
-
-
-//ArSinH
+//Leaky RELU
+double relu(double);
+double relu_derivative(double);
