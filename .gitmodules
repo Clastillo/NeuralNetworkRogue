@@ -1,4 +1,4 @@
 [submodule "rogue"]
 	path = rogue
-	url = https://github.com/Davidslv/rogue.git
+	url = https://github.com/colfrog/rogue.git
 	branch = master
