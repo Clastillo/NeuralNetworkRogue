@@ -2,7 +2,6 @@
 #include <math.h>
 #include "activationFunction.h"
 
-const double E = 2.718281828459045235360;
 const double RELU_LEAK = 0.01;
 
 //Binary step
@@ -15,7 +14,7 @@ double binary(double d)
 //Sigmoid
 double sigmoid(double d)
 {
-	return (1 / (1 + pow(E, -d)));
+	return (1 / (1 + exp(-d)));
 }
 
 double sigmoid_Derivative(double d)
@@ -27,8 +26,8 @@ double sigmoid_Derivative(double d)
 //Tanh
 double tanh(double d)
 {
-	double tmp1 = pow(E, d);
-	double tmp2 = pow(E, -d);
+	double tmp1 = exp(d);
+	double tmp2 = exp(-d);
 	return((tmp1-tmp2) / (tmp1+tmp2));
 }
 
